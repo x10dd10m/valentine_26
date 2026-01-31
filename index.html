@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Message For You 💕</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="heart-bg" id="heartBg"></div>
+    <div class="celebration" id="celebration"></div>
+
+    <div class="card-wrapper">
+        <div class="card" id="card">
+            <!-- Front Face -->
+            <div class="card__face card__face--front" onclick="flipCard()">
+                <div class="stamp">💕</div>
+                <div class="postcard-lines">
+                    <div class="postcard-line"></div>
+                    <div class="postcard-line"></div>
+                    <div class="postcard-line"></div>
+                    <div class="postcard-line"></div>
+                </div>
+                <div class="flowers flower-1">🌸</div>
+                <div class="flowers flower-2">🌺</div>
+                <div class="flowers flower-3">🌹</div>
+                <div class="flowers flower-4">🌼</div>
+                <div class="flowers flower-5">🌷</div>
+                
+                <div class="front-content">
+                    <div class="envelope">💌</div>
+                    <h2>Meri Jaan, You've Got a Special Message!</h2>
+                    <p>Click to open and see what's inside...</p>
+                    <div class="click-hint">✨ Tap the card ✨</div>
+                </div>
+            </div>
+
+            <!-- Back Face -->
+            <div class="card__face card__face--back">
+                <div class="heart-icon">💖</div>
+                <h1 class="back-title">Alishbah, will You Be My Valentine?<small style="font-size: small;">(forever)</small></h1>
+                
+                <div class="days-together">
+                    <span class="days-number" id="daysNumber">0</span>
+                    <span class="days-text">days of being in love with you</span>
+                </div>
+                
+                <div class="message">
+                    <p>So grateful for this life where I get to love you and experience your love every single day.</p>
+                </div>
+
+                <div class="buttons">
+                    <button class="btn btn-yes" onclick="handleYes(event)">Yes! 💕</button>
+                    <button class="btn btn-no" onclick="handleNo(event)">No</button>
+                </div>
+
+                <div class="response" id="response"></div>
+                
+                <div class="hug-gif" id="hugGif">
+                    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHc2czd0c2FtemozOTU1azZwMjdoc3psbGJ6MWowam8wbWhsdmc3NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IzXiddo2twMmdmU8Lv/giphy.gif" alt="Couple hugging">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
