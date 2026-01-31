@@ -69,7 +69,7 @@ html, body {
             position: relative;
             z-index: 1;
             width: min(90vw, 400px);
-            height: min(85vh, 550px);
+            height: min(85vh, 750px);
             perspective: 1500px;
         }
 
